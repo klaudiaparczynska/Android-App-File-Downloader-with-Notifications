@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_adres"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/adres"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/adres"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/adres_url"
+
+        android:textColorHint="#757575"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_adres"
+        app:layout_constraintTop_toTopOf="@+id/textView_adres" />
+
+    <Button
+        android:id="@+id/download_info"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/pobierz_informacje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adres" />
+
+    <TextView
+        android:id="@+id/textView_size"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/rozmiar_pliku"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_adres"
+        app:layout_constraintTop_toBottomOf="@+id/download_info" />
+
+    <TextView
+        android:id="@+id/textView_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/typ_pliku"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_size"
+        app:layout_constraintTop_toBottomOf="@+id/textView_size" />
+
+    <Button
+        android:id="@+id/download_file"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/pobierz_plik"
+        app:layout_constraintEnd_toEndOf="@+id/download_info"
+        app:layout_constraintStart_toStartOf="@+id/download_info"
+        app:layout_constraintTop_toBottomOf="@+id/textView_type" />
+
+    <TextView
+        android:id="@+id/textView_downloaded"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/pobrano_bajt_w"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_type"
+        app:layout_constraintTop_toBottomOf="@+id/download_file" />
+
+    <TextView
+        android:id="@+id/file_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="@string/_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_size"
+        app:layout_constraintStart_toEndOf="@+id/textView_size" />
+
+    <TextView
+        android:id="@+id/file_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_type"
+        app:layout_constraintEnd_toEndOf="@+id/file_size"
+        app:layout_constraintStart_toStartOf="@+id/file_size"
+        app:layout_constraintTop_toBottomOf="@+id/file_size" />
+
+    <TextView
+        android:id="@+id/file_downloaded"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_downloaded"
+        app:layout_constraintEnd_toEndOf="@+id/file_size"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="@+id/file_size" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
