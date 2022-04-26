@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     TextView adres, file_size, file_type, file_downloaded;
     Button download_info, download_file;
     private String INFO_ARRAY_LIST_KEY = "com.example.file_downloader2.INFO_ARRAY_LIST_KEY";
-    NotificationManager notificationMenager = getSystemService(NotificationManager.class);
+    //NotificationManager notificationMenager = getSystemService(NotificationManager.class);
     static final String ID_CHANNEL = "Notification";
     static final int ID_NOTIFICATION = 101;
 
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         //Async class Object
         Async async = new Async();
         //Notification
-        ExecutorService fileDownloadExecutor = Executors.newSingleThreadExecutor();
+        //ExecutorService fileDownloadExecutor = Executors.newSingleThreadExecutor();
         //createNotificationChannel();
 
 
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+/*
     void createNotificationChannel() {
         notificationMenager = (NotificationManager)
                 getSystemService(NOTIFICATION_SERVICE);
@@ -129,14 +129,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
-
-
-
-
+ */
 
 
 
