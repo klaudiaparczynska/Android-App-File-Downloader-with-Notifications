@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Project3</string>
+    <string name="url_label">Url:</string>
+    <string name="file_type_label">File type:</string>
+    <string name="file_size_label">File size:</string>
+    <string name="download_information_button">Download Information</string>
+    <string name="download_file_button">Download File</string>
+    <string name="zero">0</string>
+    <string name="bytes_downloaded_label">Downloaded:</string>
+    <string name="example_url">https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.4.36.tar.xz</string>
+    <string name="notification_title">Downloading</string>
+</resources>
